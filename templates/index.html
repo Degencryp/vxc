@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+</head>
+<body>
+    <h1>Crypto Dashboard</h1>
+    <h2>Price Data</h2>
+    <pre>{{ price_data }}</pre>
+    <h2>Tweets</h2>
+    <ul>
+    {% for tweet in tweets %}
+        <li>{{ tweet.text }}</li>
+    {% endfor %}
+    </ul>
+    <h2>Reddit Posts</h2>
+    <ul>
+    {% for post in posts %}
+        <li>{{ post.title }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
