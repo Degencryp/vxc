@@ -1,0 +1,6 @@
+requests
+pandas
+numpy
+tweepy
+praw
+flask
